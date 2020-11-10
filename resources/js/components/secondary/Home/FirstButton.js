@@ -25,16 +25,15 @@ class FirstButton extends Component {
   render() {
       return (
         <div className='grid-container'>
-        <div className="CuadroFirstButton bp3-card bp3-interactive bp3-elevation-3 ">
+            <div className='triangulo2'>
+            </div>
+        <div className="CuadroSecondButton bp3-card bp3-interactive bp3-elevation-3 ">
           <div className="infodisp">
             <div className="NombredispFB" >
-              Visualizar Reservas
+              Visualizar y Realizar Reservas
             </div>
           </div>
         </div>
-        <div className='triangulo'>
-        </div>
-
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Usuario from './Usuario.js';
 import SearchBar from 'react-js-search';
+import { Link } from "react-router-dom";
 
 class CrearUsuario extends Component {
   render() {
@@ -14,13 +15,22 @@ class CrearUsuario extends Component {
       <label class="bp3-label" for="form-group-input">
         Buscar Usuario:
       </label>
+          <div class="bp3-input-group barraBuscar">
+            <span class="bp3-icon bp3-icon-search CrearUsuarioSearch"></span>
+            <input type="text" class="bp3-input"  placeholder="Search" />
+            <button class="bp3-button bp3-minimal bp3-intent-primary bp3-icon-arrow-right"></button>
+          </div>
       </div>
-      <div class="bp3-input-group ">
-        <span class="bp3-icon bp3-icon-search CrearUsuarioSearch"></span>
-        <input type="text" class="bp3-input"  placeholder="Search" />
-        <button class="bp3-button bp3-minimal bp3-intent-primary bp3-icon-arrow-right"></button>
-      </div>
+      <div class='botonesAdminUsuario'>
+          <Link to="/CrearNuevoUsuario">
+              <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonGestionUsuario">Crear Usuario</button>
+          </Link>
+          <Link to="/EliminarUsuario">
+              <button type="button" class="bp3-button bp3-icon-add bp3-intent-success botonGestionUsuario">Eliminar Usuario</button>
+          </Link>
 
+
+      </div>
       </div>
       </div>
     );

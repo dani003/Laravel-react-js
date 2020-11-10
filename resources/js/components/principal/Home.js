@@ -20,9 +20,6 @@ class Home extends Component {
             <Link to="/VisualizarReservas">
                 <FirstButton></FirstButton>
             </Link>
-            <Link to="/RealizarReservas">
-              <SecondButton></SecondButton>
-            </Link>
             <Link to="/CancelarReservas">
               <ThirdButton></ThirdButton>
             </Link>
