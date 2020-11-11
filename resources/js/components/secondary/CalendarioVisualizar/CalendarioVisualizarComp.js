@@ -29,9 +29,6 @@ class CalendarioVisualizarComp extends Component {
     {lastname: this.state.lastname,})
   }
 
-  dataItem(data){
-    this.setState({data: !this.state.data});
-  }
 
   render() {
     var {edit}=this.state;

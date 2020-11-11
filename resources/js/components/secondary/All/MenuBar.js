@@ -19,8 +19,11 @@ class MenuBar extends Component {
             <Link  to="/Perfil" className="homecolor" >
             <button class="bp3-button bp3-minimal bp3-icon-user">Perfil</button>
             </Link>
-            <Link  to="/" className="homecolor" >
-            <button class="bp3-button bp3-minimal bp3-icon-layout-auto">Noticias</button>
+            <Link  to="/GestionEquipo" className="homecolor" >
+            <button class="bp3-button bp3-minimal bp3-icon-desktop">Equipos</button>
+            </Link>
+            <Link  to="/GestionLaboratorio" className="homecolor" >
+            <button class="bp3-button bp3-minimal bp3-icon-lab-test">Laboratorios</button>
             </Link>
           </div>
           <div class="bp3-navbar-group bp3-align-right">

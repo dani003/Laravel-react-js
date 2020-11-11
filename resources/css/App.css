@@ -1873,3 +1873,54 @@ td{
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.tablaEquipos{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 90%;
+    border-radius: 30px;
+    height: 60%;
+    margin: 50px;
+    background: #C2F9F4;
+}
+
+.BarraTituloTabla{
+    margin-top: 250px;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: 50px;
+}
+
+.GestionEquipoCard{
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 20px;
+  border-radius: 30px;
+  margin-left: 50px;
+}
+
+.barraBuscarGestion{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 55%;
+    margin-top: 25px;
+}
+
+.botonCrearUsuario{
+    margin-left: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.botonesModElim{
+    width: 100px;
+    margin: 5px;
+}

@@ -11,6 +11,10 @@ import Perfil from './principal/Perfil.js';
 import CalendarioVisualizar from './principal/CalendarioVisualizar.js';
 import CrearNuevoUsuario from './principal/CrearNuevoUsuario.js';
 import EliminarUsuario from './principal/EliminarUsuario.js';
+import GestionEquipo from './principal/GestionEquipo.js';
+import GestionLaboratorio from './principal/GestionLaboratorio.js';
+import AgregarEquipo from './principal/AgregarEquipo.js';
+import AgregarLaboratorio from './principal/AgregarLaboratorio.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../../css/App.css';
 
@@ -28,6 +32,10 @@ function App() {
             <Route exact path="/CalendarioVisualizar" component={CalendarioVisualizar}/>
             <Route exact path="/CrearNuevoUsuario" component={CrearNuevoUsuario}/>
             <Route exact path="/EliminarUsuario" component={EliminarUsuario}/>
+            <Route exact path="/GestionEquipo" component={GestionEquipo}/>
+            <Route exact path="/GestionLaboratorio" component={GestionLaboratorio}/>
+            <Route exact path="/AgregarEquipo" component={AgregarEquipo}/>
+            <Route exact path="/AgregarLaboratorio" component={AgregarLaboratorio}/>
           </div>
         </BrowserRouter>
     );
