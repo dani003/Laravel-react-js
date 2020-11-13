@@ -15,6 +15,8 @@ import GestionEquipo from './principal/GestionEquipo.js';
 import GestionLaboratorio from './principal/GestionLaboratorio.js';
 import AgregarEquipo from './principal/AgregarEquipo.js';
 import AgregarLaboratorio from './principal/AgregarLaboratorio.js';
+import ModificarEquipo from './principal/ModificarEquipo.js';
+import ModificarLaboratorio from './principal/ModificarLaboratorio.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../../css/App.css';
 
@@ -36,6 +38,8 @@ function App() {
             <Route exact path="/GestionLaboratorio" component={GestionLaboratorio}/>
             <Route exact path="/AgregarEquipo" component={AgregarEquipo}/>
             <Route exact path="/AgregarLaboratorio" component={AgregarLaboratorio}/>
+            <Route exact path="/ModificarEquipo" component={ModificarEquipo}/>
+            <Route exact path="/ModificarLaboratorio" component={ModificarLaboratorio}/>
           </div>
         </BrowserRouter>
     );

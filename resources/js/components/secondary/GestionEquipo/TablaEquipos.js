@@ -14,7 +14,6 @@ class TablaEquipos extends Component {
                 <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
               </div>
             </div>
-            <div>
                 <div className=" bp3-card bp3-elevation-3 GestionEquipoCard">
                 <div class='botonCrearUsuario'>
                     <Link to="/AgregarEquipo">
@@ -27,7 +26,6 @@ class TablaEquipos extends Component {
                   <button class="bp3-button bp3-minimal bp3-intent-primary bp3-icon-arrow-right"></button>
                 </div>
                 </div>
-            </div>
           <div class="tablaEquipos">
               <table class="bp3-html-table bp3-html-table-bordered bp3-html-table-striped">
                   <thead>
@@ -48,7 +46,9 @@ class TablaEquipos extends Component {
                       <td>TypeScript</td>
                       <td>Static analysis linter for TypeScript</td>
                       <td>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          <Link to="/ModificarEquipo">
+                              <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          </Link>
                           <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
                       </td>
                     </tr>
@@ -59,7 +59,9 @@ class TablaEquipos extends Component {
                       <td>TypeScript</td>
                       <td>Static analysis linter for TypeScript</td>
                       <td>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          <Link to="/ModificarEquipo">
+                              <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          </Link>
                           <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
                       </td>
                     </tr>
@@ -70,7 +72,9 @@ class TablaEquipos extends Component {
                       <td>TypeScript</td>
                       <td>Static analysis linter for TypeScript</td>
                       <td>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          <Link to="/ModificarEquipo">
+                              <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          </Link>
                           <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
                       </td>
                     </tr>

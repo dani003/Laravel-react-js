@@ -7,6 +7,15 @@ class FormRealizarReserva extends Component {
     return (
       <div>
         <div className='FormCancelarReservaBox'>
+            <div class="bp3-navbar BarraTituloUsuarios">
+              <div class="bp3-navbar-group bp3-align-left ">
+                <div><h2>Visualizar y realizar reservas </h2></div>
+              </div>
+              <div class="bp3-navbar-group bp3-align-right">
+                <span class="bp3-navbar-divider"></span>
+                <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+              </div>
+            </div>
           <div className=" bp3-card bp3-interactive bp3-elevation-3 FormCancelarReservaBoxCard">
             <div>
               <img className="imagenCalendario" src="https://cdn4.iconfinder.com/data/icons/small-n-flat/24/calendar-512.png"></img>
@@ -14,20 +23,25 @@ class FormRealizarReserva extends Component {
             <div className="infodisp">
               <div className="Nombredisp FormReserva" >
                 <label class="bp3-label bp3-inline ">
-                    Laboratorio
+                    Seleccionar Equipo:
                   <div class="bp3-select SelectReservas">
                     <select >
-                      <option selected>Seleccionar equipo</option>
-                      <option value="1">Biotecnologia</option>
-                      <option value="1">Biologia</option>
-                      <option value="1">quimica</option>
-                      <option value="1">nanotecnologias</option>
-                      <option value="1">Otros</option>
+                      <option selected value="1">Biotecnologia</option>
+                      <option value="1" disabled> * Biologia</option>
+                      <option value="1">Microscopio</option>
+                      <option value="1">Microscopio</option>
+                      <option value="1" disabled> * Quimica</option>
+                      <option value="1">Microscopio</option>
+                      <option value="1">Microscopio</option>
+                      <option value="1" disabled> * Nanotecnologias</option>
+                      <option value="1">Microscopio</option>
+                      <option value="1">Microscopio</option>
+                      <option value="1" disabled>Otros</option>
                     </select>
                   </div>
                 </label>
                 <Link to="/CalendarioVisualizar">
-                <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-success">Ir A Ver Calendario</button>
+                <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-success">Ir al calendario</button>
               </Link>
                 <Link to="/">
                 <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-danger">Volver</button>

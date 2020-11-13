@@ -48,7 +48,14 @@ class EliminarUsuarioForm extends Component {
     return (
         <div>
         {(edit) ? (<div className="CrearNuevoUsuarioBox">
-            <div class="tituloEliminarUsuario"><h2>Eliminar Usuario</h2>
+            <div class="bp3-navbar BarraTituloUsuarios">
+              <div class="bp3-navbar-group bp3-align-left ">
+                <div><h2>Eliminar Usuario </h2></div>
+              </div>
+              <div class="bp3-navbar-group bp3-align-right">
+                <span class="bp3-navbar-divider"></span>
+                <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+              </div>
             </div>
             <div class="CrearNuevoUsuarioForm">
                   <div className="infoProfile ProfileTittles">
@@ -67,8 +74,15 @@ class EliminarUsuarioForm extends Component {
                 </div>
             </div>
         </div>) : (<div className="CrearNuevoUsuarioBox">
-            <div class="tituloEliminarUsuario"><h2>Eliminar Usuario</h2>
-            </div>
+        <div class="bp3-navbar BarraTituloUsuarios">
+          <div class="bp3-navbar-group bp3-align-left ">
+            <div><h2>Eliminar Usuario </h2></div>
+          </div>
+          <div class="bp3-navbar-group bp3-align-right">
+            <span class="bp3-navbar-divider"></span>
+            <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+          </div>
+        </div>
             <div class="CrearNuevoUsuarioForm">
                   <div className="infoProfile ProfileTittles">
                     <FormGroup

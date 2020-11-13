@@ -86,15 +86,8 @@ handleChange(event){
   this.setState({[event.target.name]: event.target.value});
 }
 
-
-
 editItem(edit){
   this.setState({edit: !this.state.edit});
-  //this.GetUser();
-  axios.put("http://localhost:3002/api/user/05360643-ee4a-44fa-95e5-a4c3463bccd1/attribute",
-  {firstname: this.state.firstname,})
-  axios.put("http://localhost:3002/api/user/05360643-ee4a-44fa-95e5-a4c3463bccd1/attribute",
-  {lastname: this.state.lastname,})
   this.GetUser2()
 }
 
@@ -112,18 +105,19 @@ editItem(edit){
         {(edit) ? (
           <div>
           <div className="cardProfile1">
-            <div><h2>Perfil de Usuario</h2></div>
+              <div class="bp3-navbar BarraTituloUsuario">
+                <div class="bp3-navbar-group bp3-align-left ">
+                  <div><h2>Perfil de usuario </h2></div>
+                </div>
+                <div class="bp3-navbar-group bp3-align-right">
+                  <span class="bp3-navbar-divider"></span>
+                  <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+                </div>
+              </div>
             <ButtonGroup minimal={true} >
            </ButtonGroup>
           </div>
             <Card interactive={true} elevation={Elevation.TWO} className="cardProfile">
-              <div className="imgProfileBox">
-                <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-                <div className='ChangeImgProfile'>
-                <button type="button" class="bp3-button bp3-icon-add" >Cambiar Imagen de Perfil</button>
-                </div>
-              </div>
-
               <div className="infoProfile ProfileTittles">
                 <FormGroup
                   label="Nombres"
@@ -156,7 +150,8 @@ editItem(edit){
                   <InputGroup className="ProfileInput" name='lastname' id="text-input" onChange={ this.handleChange }
                   placeholder="Ingresar descripcion" Value={this.state.descripcion}/>
                 </FormGroup>
-                <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Change</Button>
+                <Button type="button" class="bp3-button bp3-icon-add " intent="danger" onClick={this.editItem.bind(this)} >Volver</Button>
+                <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Editar</Button>
             </div>
             <div>
             </div>
@@ -164,7 +159,15 @@ editItem(edit){
         </div>):
       (<div className="content">
       <div className="cardProfile">
-        <div><h2>Perfil de Usuario</h2></div>
+          <div class="bp3-navbar BarraTituloUsuario">
+            <div class="bp3-navbar-group bp3-align-left ">
+              <div><h2>Perfil de usuario </h2></div>
+            </div>
+            <div class="bp3-navbar-group bp3-align-right">
+              <span class="bp3-navbar-divider"></span>
+              <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+            </div>
+          </div>
         <ButtonGroup minimal={true} >
             <Button class="bp3-button bp3-icon-add " type="button"  icon="edit" onClick={this.editItem.bind(this)}>Edit</Button>
             {/* <Button class="bp3-button bp3-icon-add " type="button" intent="danger" icon="trash">Delete</Button>*/}

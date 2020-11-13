@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import Usuario from './Usuario.js';
 import SearchBar from 'react-js-search';
 import { Link } from "react-router-dom";
+import Usuario from './Usuario.js';
 
 class CrearUsuario extends Component {
   render() {
     return (
       <div className='CrearUsuarioBox'>
-      <div className="CrearUsuarioTitulo">
-        <div><h2>Lista de Usuarios</h2></div>
-      </div>
+          <div class="bp3-navbar BarraTituloUsuarios">
+            <div class="bp3-navbar-group bp3-align-left ">
+              <div><h2>Lista de Usuarios </h2></div>
+            </div>
+            <div class="bp3-navbar-group bp3-align-right">
+              <span class="bp3-navbar-divider"></span>
+              <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+            </div>
+          </div>
       <div className=" bp3-card bp3-interactive bp3-elevation-3 CrearUsuarioCard">
       <div className='CrearUsuarioInfo'>
       <label class="bp3-label" for="form-group-input">
@@ -32,6 +38,7 @@ class CrearUsuario extends Component {
 
       </div>
       </div>
+      <Usuario></Usuario>
       </div>
     );
   }

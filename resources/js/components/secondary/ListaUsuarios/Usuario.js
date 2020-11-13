@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
 class Usuario extends Component {
   render() {
       return (
-        <div className='UsuarioBox1'>
+        <div>
         <div className='UsuarioBox2'>
             <Link to='/Perfil'>
               <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">

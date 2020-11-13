@@ -65,7 +65,7 @@ class CalendarioVisualizarComp extends Component {
 
         <div class="bp3-navbar BarraTituloCalendario">
           <div class="bp3-navbar-group bp3-align-left ">
-            <div><h2>Laboratorio: Biotecnologia </h2></div>
+            <div><h2>Equipo: Microscopio - Laboratorio: Biotecnologia </h2></div>
           </div>
           <div class="bp3-navbar-group bp3-align-right">
             <span class="bp3-navbar-divider"></span>
@@ -118,7 +118,7 @@ class CalendarioVisualizarComp extends Component {
                   3
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-              <Link to="">
+              <Link to="/RealizarReservas">
                   <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
               </Link>
 

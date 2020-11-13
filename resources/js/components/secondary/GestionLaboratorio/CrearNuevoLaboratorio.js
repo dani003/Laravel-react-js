@@ -45,7 +45,14 @@ class CrearNuevoLaboratorio extends Component {
         <div>
         {(edit) ? (
             <div className="CrearNuevoUsuarioBox">
-                <div class="tituloEliminarUsuario"><h2>Crear Laboratorio</h2>
+                <div class="bp3-navbar BarraTituloCrearLab">
+                  <div class="bp3-navbar-group bp3-align-left ">
+                    <div><h2>Agregar Laboratorio </h2></div>
+                  </div>
+                  <div class="bp3-navbar-group bp3-align-right">
+                    <span class="bp3-navbar-divider"></span>
+                    <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+                  </div>
                 </div>
                 <div class="CrearNuevoUsuarioForm">
                       <div className="infoProfile ProfileTittles">
@@ -54,7 +61,7 @@ class CrearNuevoLaboratorio extends Component {
                           labelFor="text-input">
                         </FormGroup>
                         <div>
-                            <Link to="/ListaUsuarios">
+                            <Link to="/GestionLaboratorio">
                                 <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
                         </div>
@@ -64,8 +71,15 @@ class CrearNuevoLaboratorio extends Component {
                 </div>
             </div>
         ) : (
-            <div className="CrearNuevoUsuarioBox">
-                <div class="tituloNuevoUsuario"><h2>Crear Laboratorio</h2>
+            <div className="CrearNuevoLaboratorioBox">
+                <div class="bp3-navbar BarraTituloCrearLab">
+                  <div class="bp3-navbar-group bp3-align-left ">
+                    <div><h2>Agregar Laboratorio </h2></div>
+                  </div>
+                  <div class="bp3-navbar-group bp3-align-right">
+                    <span class="bp3-navbar-divider"></span>
+                    <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
+                  </div>
                 </div>
                 <div class="CrearNuevoUsuarioForm">
                       <div className="infoProfile ProfileTittles">

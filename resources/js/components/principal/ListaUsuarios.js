@@ -12,7 +12,6 @@ class ListaUsuarios extends Component {
         <TopBar></TopBar>
         <MenuBar></MenuBar>
         <CrearUsuario></CrearUsuario>
-        <Usuario></Usuario>
         <Footer></Footer>
       </div>
     );

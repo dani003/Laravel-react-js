@@ -44,7 +44,9 @@ class TablaLaboratorios extends Component {
                       <td>TypeScript</td>
                       <td>Static analysis linter for TypeScript</td>
                       <td>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          <Link to="/ModificarLaboratorio">
+                              <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          </Link>
                           <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
                       </td>
                     </tr>
@@ -54,7 +56,9 @@ class TablaLaboratorios extends Component {
                       <td>TypeScript</td>
                       <td>Static analysis linter for TypeScript</td>
                       <td>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          <Link to="/ModificarLaboratorio">
+                              <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          </Link>
                           <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
                       </td>
                     </tr>
@@ -64,7 +68,9 @@ class TablaLaboratorios extends Component {
                       <td>TypeScript</td>
                       <td>Static analysis linter for TypeScript</td>
                       <td>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          <Link to="/ModificarLaboratorio">
+                              <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
+                          </Link>
                           <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
                       </td>
                     </tr>
