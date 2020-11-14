@@ -45,7 +45,7 @@ class CrearNuevoLaboratorio extends Component {
         <div>
         {(edit) ? (
             <div className="CrearNuevoUsuarioBox">
-                <div class="bp3-navbar BarraTituloCrearLab">
+                <div class="bp3-navbar BarraTituloCrearLab2">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Agregar Laboratorio </h2></div>
                   </div>
@@ -54,7 +54,7 @@ class CrearNuevoLaboratorio extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm">
+                <div class="CrearNuevoUsuarioForm2">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Laboratorio ha sido creado con exito !!"
@@ -67,6 +67,7 @@ class CrearNuevoLaboratorio extends Component {
                         </div>
                     </div>
                     <div>
+                      <img className="imgCrearNuevoLab" src="https://www.bio-class.com/cotizador/wp-content/uploads/2020/09/2357575.png"></img>
                     </div>
                 </div>
             </div>

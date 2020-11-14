@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import { Button, Intent, Popover, PopoverInteractionKind, Position } from "@blueprintjs/core";
 
 
 class CalendarioVisualizarComp extends Component {
@@ -119,7 +119,19 @@ class CalendarioVisualizarComp extends Component {
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
               <Link to="/RealizarReservas">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                  <Popover
+                        interactionKind={PopoverInteractionKind.CLICK}
+                        popoverClassName="bp3-popover-content-sizing"
+                        position={Position.RIGHT}>
+                        <button  type="button" className="ReservaInfoBotonL" >L</button>
+                        <div>
+                            <h5>Equipo disponible en el horario seleccionado</h5>
+                            <p>Si desea reservar, presionar boton "Reservar"</p>
+                            <Link to="/RealizarReservas">
+                                <Button className="bp3-popover-dismiss">Reservar</Button>
+                            </Link>
+                        </div>
+                    </Popover>
               </Link>
 
 
@@ -128,23 +140,82 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   4
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-
+                <Popover
+                      interactionKind={PopoverInteractionKind.CLICK}
+                      popoverClassName="bp3-popover-content-sizing"
+                      position={Position.RIGHT}>
+                      <button  type="button" className="ReservaInfoBotonL" >L</button>
+                      <div>
+                          <h5>Equipo disponible en el horario seleccionado</h5>
+                          <p>Si desea reservar, presionar boton "Reservar"</p>
+                          <Link to="/RealizarReservas">
+                              <Button className="bp3-popover-dismiss">Reservar</Button>
+                          </Link>
+                      </div>
+                  </Popover>
+                  <Popover
+                        interactionKind={PopoverInteractionKind.CLICK}
+                        popoverClassName="bp3-popover-content-sizing"
+                        position={Position.RIGHT}>
+                        <button  type="button" className="ReservaInfoBotonL" >L</button>
+                        <div>
+                            <h5>Equipo disponible en el horario seleccionado</h5>
+                            <p>Si desea reservar, presionar boton "Reservar"</p>
+                            <Link to="/RealizarReservas">
+                                <Button className="bp3-popover-dismiss">Reservar</Button>
+                            </Link>
+                        </div>
+                    </Popover>
                 </div>
               </td>
               <td>
                   5
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                  <Popover
+                        interactionKind={PopoverInteractionKind.CLICK}
+                        popoverClassName="bp3-popover-content-sizing"
+                        position={Position.RIGHT}>
+                        <button  type="button" className="ReservaInfoBotonL" >L</button>
+                        <div>
+                            <h5>Equipo disponible en el horario seleccionado</h5>
+                            <p>Si desea reservar, presionar boton "Reservar"</p>
+                            <Link to="/RealizarReservas">
+                                <Button className="bp3-popover-dismiss">Reservar</Button>
+                            </Link>
+                        </div>
+                    </Popover>
                 </div>
               </td>
               <td>
                   6
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -152,7 +223,19 @@ class CalendarioVisualizarComp extends Component {
                   7
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -161,30 +244,102 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   8
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   9
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
                 </div>
               </td>
               <td>
 
                  10
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
                   <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
               </div>
               </td>
               <td>
                   11
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
                   <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
 
                 </div>
@@ -201,14 +356,38 @@ class CalendarioVisualizarComp extends Component {
                   13
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class=" ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   14
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
                   <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
 
                 </div>
@@ -219,7 +398,19 @@ class CalendarioVisualizarComp extends Component {
                   15
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -227,22 +418,70 @@ class CalendarioVisualizarComp extends Component {
                   16
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   17
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   18
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
                   <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
 
                 </div>
@@ -251,22 +490,70 @@ class CalendarioVisualizarComp extends Component {
                   19
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   20
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   21
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
                   <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
 
                 </div>
@@ -277,7 +564,19 @@ class CalendarioVisualizarComp extends Component {
                   22
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -285,15 +584,51 @@ class CalendarioVisualizarComp extends Component {
                   23
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   24
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -301,7 +636,19 @@ class CalendarioVisualizarComp extends Component {
                   25
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -309,23 +656,83 @@ class CalendarioVisualizarComp extends Component {
                   26
                 <div class="bp3-card CardReservaDia">
                   <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   27
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   28
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >L</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonL" >L</button>
+                          <div>
+                              <h5>Equipo disponible en el horario seleccionado</h5>
+                              <p>Si desea reservar, presionar boton "Reservar"</p>
+                              <Link to="/RealizarReservas">
+                                  <Button className="bp3-popover-dismiss">Reservar</Button>
+                              </Link>
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonL" >L</button>
+                            <div>
+                                <h5>Equipo disponible en el horario seleccionado</h5>
+                                <p>Si desea reservar, presionar boton "Reservar"</p>
+                                <Link to="/RealizarReservas">
+                                    <Button className="bp3-popover-dismiss">Reservar</Button>
+                                </Link>
+                            </div>
+                        </Popover>
 
                 </div>
               </td>

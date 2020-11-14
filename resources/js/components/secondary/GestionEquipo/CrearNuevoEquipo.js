@@ -45,7 +45,7 @@ class CrearNuevoEquipo extends Component {
         <div>
         {(edit) ? (
             <div className="CrearNuevoUsuarioBox">
-                <div class="bp3-navbar BarraTituloCrear">
+                <div class="bp3-navbar BarraTituloCrearLab">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Agregar equipo </h2></div>
                   </div>
@@ -54,7 +54,7 @@ class CrearNuevoEquipo extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm">
+                <div class="CrearNuevoUsuarioForm2">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Equipo ha sido creado con exito !!"
@@ -66,13 +66,14 @@ class CrearNuevoEquipo extends Component {
                             </Link>
                         </div>
                     </div>
-                    <div>
+                    <div className="imgCrearNuevoEquipo">
+                      <img className="imgCrearNuevoEquipo" src="https://images.vexels.com/media/users/3/144262/isolated/preview/009c23b836c5f0abc17fb76b9e49396e-laboratorio-de-tubos-de-ensayo-by-vexels.png"></img>
                     </div>
                 </div>
             </div>
         ) : (
             <div className="CrearNuevoLaboratorioBox">
-                <div class="bp3-navbar BarraTituloCrear">
+                <div class="bp3-navbar BarraTituloCrearLab">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Agregar equipo </h2></div>
                   </div>

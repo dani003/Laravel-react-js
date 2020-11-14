@@ -54,7 +54,7 @@ class CrearNuevoUsuarioForm extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm">
+                <div class="CrearNuevoUsuarioForm2">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Usuario ha sido creado con exito !!"
@@ -67,6 +67,7 @@ class CrearNuevoUsuarioForm extends Component {
                         </div>
                     </div>
                     <div>
+                      <img className="imgCrearNuevoUsuario" src="https://purepng.com/public/uploads/large/purepng.com-scientistscientistknowledgescientistsphysicalphysicalnature-1421526965187jopjq.png"></img>
                     </div>
                 </div>
             </div>

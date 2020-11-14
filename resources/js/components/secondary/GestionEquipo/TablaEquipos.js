@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { Button, Intent, Popover, PopoverInteractionKind, Position } from "@blueprintjs/core";
+
 
 class TablaEquipos extends Component {
   render() {
@@ -49,7 +51,18 @@ class TablaEquipos extends Component {
                           <Link to="/ModificarEquipo">
                               <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
                           </Link>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
+                          <Popover
+                                interactionKind={PopoverInteractionKind.CLICK}
+                                popoverClassName="bp3-popover-content-sizing"
+                                position={Position.RIGHT}>
+                                <button type="button" className="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
+                                <div>
+                                    <h5>¿ Esta seguro de querer eliminar este equipo ?</h5>
+                                    <Link to="/GestionEquipo">
+                                        <Button className="bp3-popover-dismiss">Si</Button>
+                                    </Link>
+                                </div>
+                            </Popover>
                       </td>
                     </tr>
                     <tr>
@@ -62,7 +75,18 @@ class TablaEquipos extends Component {
                           <Link to="/ModificarEquipo">
                               <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
                           </Link>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
+                          <Popover
+                                interactionKind={PopoverInteractionKind.CLICK}
+                                popoverClassName="bp3-popover-content-sizing"
+                                position={Position.RIGHT}>
+                                <button type="button" className="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
+                                <div>
+                                    <h5>¿ Esta seguro de querer eliminar este equipo ?</h5>
+                                    <Link to="/GestionEquipo">
+                                        <Button className="bp3-popover-dismiss">Si</Button>
+                                    </Link>
+                                </div>
+                            </Popover>
                       </td>
                     </tr>
                     <tr>
@@ -75,7 +99,18 @@ class TablaEquipos extends Component {
                           <Link to="/ModificarEquipo">
                               <button type="button" class="botonesModElim bp3-button bp3-icon-edit  bp3-intent-primary bp3-small">Modificar</button>
                           </Link>
-                          <button type="button" class="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
+                          <Popover
+                                interactionKind={PopoverInteractionKind.CLICK}
+                                popoverClassName="bp3-popover-content-sizing"
+                                position={Position.RIGHT}>
+                                <button type="button" className="botonesModElim bp3-button bp3-icon-delete  bp3-intent-danger bp3-small">Eliminar</button>
+                                <div>
+                                    <h5>¿ Esta seguro de querer eliminar este equipo ?</h5>
+                                    <Link to="/GestionEquipo">
+                                        <Button className="bp3-popover-dismiss">Si</Button>
+                                    </Link>
+                                </div>
+                            </Popover>
                       </td>
                     </tr>
                   </tbody>

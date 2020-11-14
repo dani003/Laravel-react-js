@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import { Alignment, Checkbox, H5, Label, Switch } from "@blueprintjs/core";
+import { Button, Classes, Code, H3, Intent, Overlay } from "@blueprintjs/core";
 
 class FormCancelarReserva extends Component {
   render() {
@@ -21,23 +23,28 @@ class FormCancelarReserva extends Component {
           <div className="infodisp">
             <div className="Nombredisp FormReserva" >
               <label class="bp3-label bp3-inline ">
-                  Laboratorio
-                <div class="bp3-select SelectReservas">
-                  <select >
-                    <option selected>Seleccionar equipo</option>
-                    <option value="1">Biotecnologia</option>
-                    <option value="1">Biologia</option>
-                    <option value="1">quimica</option>
-                    <option value="1">nanotecnologias</option>
-                    <option value="1">Otros</option>
-                  </select>
-                </div>
+                  Estas son sus reservas activas. Seleccione las que desee cancelar:
+                  <label class="bp3-control bp3-checkbox">
+                    <input type="checkbox" />
+                    <span class="bp3-control-indicator"></span>
+                    Microscopio | Biotecnologia (23/12/2020 15:00 hrs.)
+                  </label>
+                  <label class="bp3-control bp3-checkbox">
+                    <input type="checkbox" />
+                    <span class="bp3-control-indicator"></span>
+                    Microscopio | Quimica (23/12/2020 15:00 hrs.)
+                  </label>
+                  <label class="bp3-control bp3-checkbox">
+                    <input type="checkbox" />
+                    <span class="bp3-control-indicator"></span>
+                    Microscopio | Nanotecnologia (23/12/2020 15:00 hrs.)
+                  </label>
               </label>
               <Link to="/">
-              <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-success">Ir A Cancelar</button>
+              <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-danger">Volver</button>
             </Link>
               <Link to="/">
-              <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-danger">Volver</button>
+              <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-success">Cancelar reserva</button>
             </Link>
             </div>
           </div>

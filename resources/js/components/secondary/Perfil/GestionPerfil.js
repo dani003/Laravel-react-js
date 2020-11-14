@@ -105,7 +105,7 @@ editItem(edit){
         {(edit) ? (
           <div>
           <div className="cardProfile1">
-              <div class="bp3-navbar BarraTituloUsuario">
+              <div class="bp3-navbar BarraTituloCrearLab">
                 <div class="bp3-navbar-group bp3-align-left ">
                   <div><h2>Perfil de usuario </h2></div>
                 </div>
@@ -118,6 +118,12 @@ editItem(edit){
            </ButtonGroup>
           </div>
             <Card interactive={true} elevation={Elevation.TWO} className="cardProfile">
+              <div className="imgProfileBox">
+                <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+                <div className='ChangeImgProfile'>
+                <button type="button" class="bp3-button bp3-icon-add" >Cambiar Imagen de Perfil</button>
+                </div>
+            </div>z
               <div className="infoProfile ProfileTittles">
                 <FormGroup
                   label="Nombres"
@@ -150,7 +156,7 @@ editItem(edit){
                   <InputGroup className="ProfileInput" name='lastname' id="text-input" onChange={ this.handleChange }
                   placeholder="Ingresar descripcion" Value={this.state.descripcion}/>
                 </FormGroup>
-                <Button type="button" class="bp3-button bp3-icon-add " intent="danger" onClick={this.editItem.bind(this)} >Volver</Button>
+                <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Cancelar</Button>
                 <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Editar</Button>
             </div>
             <div>
@@ -159,7 +165,7 @@ editItem(edit){
         </div>):
       (<div className="content">
       <div className="cardProfile">
-          <div class="bp3-navbar BarraTituloUsuario">
+          <div class="bp3-navbar BarraTituloCrearLab">
             <div class="bp3-navbar-group bp3-align-left ">
               <div><h2>Perfil de usuario </h2></div>
             </div>
@@ -169,7 +175,7 @@ editItem(edit){
             </div>
           </div>
         <ButtonGroup minimal={true} >
-            <Button class="bp3-button bp3-icon-add " type="button"  icon="edit" onClick={this.editItem.bind(this)}>Edit</Button>
+            <Button class="bp3-button bp3-icon-add " type="button"  icon="edit" onClick={this.editItem.bind(this)}>Editar</Button>
             {/* <Button class="bp3-button bp3-icon-add " type="button" intent="danger" icon="trash">Delete</Button>*/}
           {/*  <AnchorButton rightIcon="caret-down">Options</AnchorButton>*/}
         </ButtonGroup>
