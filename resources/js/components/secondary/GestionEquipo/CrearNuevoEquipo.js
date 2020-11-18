@@ -44,7 +44,7 @@ class CrearNuevoEquipo extends Component {
     return (
         <div>
         {(edit) ? (
-            <div className="CrearNuevoUsuarioBox">
+            <div className="CrearNuevoUsuarioBox2">
                 <div class="bp3-navbar BarraTituloCrearLab">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Agregar equipo </h2></div>
@@ -54,7 +54,7 @@ class CrearNuevoEquipo extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm2">
+                <div class="CrearNuevoLaboratorioForm2">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Equipo ha sido creado con exito !!"
@@ -62,7 +62,7 @@ class CrearNuevoEquipo extends Component {
                         </FormGroup>
                         <div>
                             <Link to="/GestionEquipo">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Volver</button>
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
                         </div>
                     </div>
@@ -116,9 +116,9 @@ class CrearNuevoEquipo extends Component {
                         </FormGroup>
                         <div>
                             <Link to="/GestionEquipo">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Cancelar</button>
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Agregar</button>
+                                <button type="button" class="bp3-button bp3-icon-new-object  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Agregar</button>
                         </div>
                     </div>
                     <div>

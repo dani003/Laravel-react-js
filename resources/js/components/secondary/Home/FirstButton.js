@@ -24,7 +24,7 @@ import {
 class FirstButton extends Component {
   render() {
       return (
-        <div className='grid-container'>
+        <div className='grid-container container1'>
             <div className='triangulo2'>
             </div>
         <div className="CuadroSecondButton bp3-card bp3-interactive bp3-elevation-3 ">

@@ -47,7 +47,7 @@ class ReservaLibre extends Component {
     return (
       <div>
         {(edit) ? (
-            <div className="CrearNuevoUsuarioBox">
+            <div className="CrearNuevoUsuarioBox2">
                 <div class="bp3-navbar BarraTituloReserva">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Reservar equipo </h2></div>
@@ -57,7 +57,7 @@ class ReservaLibre extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm">
+                <div class="CrearNuevoUsuarioForm3">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Equipo ha sido Reservado con exito !!"
@@ -65,18 +65,19 @@ class ReservaLibre extends Component {
                         </FormGroup>
                         <div>
                             <Link to="/CalendarioVisualizar">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Volver</button>
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
                         </div>
                     </div>
                     <div>
+                      <img src="https://www.freeiconspng.com/uploads/survey-icon-12.png"></img>
                     </div>
                 </div>
             </div>
             ):(
                 <div>
                 <div className="CrearNuevoLaboratorioBox">
-                    <div class="bp3-navbar BarraTituloReserva">
+                    <div class="bp3-navbar BarraTituloReserva2">
                       <div class="bp3-navbar-group bp3-align-left ">
                         <div><h2>Reservar equipo </h2></div>
                       </div>
@@ -125,8 +126,8 @@ class ReservaLibre extends Component {
                             </FormGroup>
 
                             <div>
-                                <Link to="/GestionEquipo">
-                                    <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Cancelar</button>
+                                <Link to="/CalendarioVisualizar">
+                                    <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                                 </Link>
                                     <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Reservar</button>
                             </div>

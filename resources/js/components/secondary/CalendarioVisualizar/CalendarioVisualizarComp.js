@@ -102,22 +102,142 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   1
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >T</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
                 </div>
               </td>
               <td>
                   2
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   3
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
               <Link to="/RealizarReservas">
                   <Popover
                         interactionKind={PopoverInteractionKind.CLICK}
@@ -171,7 +291,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   5
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                   <Popover
                         interactionKind={PopoverInteractionKind.CLICK}
                         popoverClassName="bp3-popover-content-sizing"
@@ -222,7 +366,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   7
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -321,7 +489,31 @@ class CalendarioVisualizarComp extends Component {
                               </Link>
                           </div>
                       </Popover>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
               </div>
               </td>
               <td>
@@ -340,22 +532,118 @@ class CalendarioVisualizarComp extends Component {
                               </Link>
                           </div>
                       </Popover>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   12
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   13
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class=" ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -388,7 +676,31 @@ class CalendarioVisualizarComp extends Component {
                               </Link>
                           </div>
                       </Popover>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -397,7 +709,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   15
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -417,7 +753,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   16
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -482,14 +842,62 @@ class CalendarioVisualizarComp extends Component {
                               </Link>
                           </div>
                       </Popover>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
               <td>
                   19
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -554,7 +962,31 @@ class CalendarioVisualizarComp extends Component {
                               </Link>
                           </div>
                       </Popover>
-                  <button  type="button" class="ReservaInfoBotonT" onClick={this.editItem.bind(this)} >T</button>
+                      <Popover
+                            interactionKind={PopoverInteractionKind.CLICK}
+                            popoverClassName="bp3-popover-content-sizing"
+                            position={Position.RIGHT}>
+                            <button  type="button" className="ReservaInfoBotonM" >R</button>
+                            <div>
+                                <h5>Informacion de reserva: </h5>
+                                    <div>
+                                       <strong>Nombre: </strong>Daniela Ramirez
+                                    </div>
+                                    <div>
+                                       <strong>Laboratorio:</strong> Biotecnologia
+                                    </div>
+                                    <div>
+                                       <strong>Equipo:  </strong>Microscopio
+                                    </div>
+                                    <div>
+                                       <strong>Fecha:</strong> 21/12/2020
+                                    </div>
+                                    <div>
+                                       <strong>Hora: </strong> 15:00 hrs.
+                                    </div>
+
+                            </div>
+                        </Popover>
 
                 </div>
               </td>
@@ -563,7 +995,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   22
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -583,7 +1039,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   23
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonL" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -635,7 +1115,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   25
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -655,7 +1159,31 @@ class CalendarioVisualizarComp extends Component {
               <td>
                   26
                 <div class="bp3-card CardReservaDia">
-                  <button  type="button" class="ReservaInfoBotonM" onClick={this.editItem.bind(this)} >M</button>
+                    <Popover
+                          interactionKind={PopoverInteractionKind.CLICK}
+                          popoverClassName="bp3-popover-content-sizing"
+                          position={Position.RIGHT}>
+                          <button  type="button" className="ReservaInfoBotonM" >R</button>
+                          <div>
+                              <h5>Informacion de reserva: </h5>
+                                  <div>
+                                     <strong>Nombre: </strong>Daniela Ramirez
+                                  </div>
+                                  <div>
+                                     <strong>Laboratorio:</strong> Biotecnologia
+                                  </div>
+                                  <div>
+                                     <strong>Equipo:  </strong>Microscopio
+                                  </div>
+                                  <div>
+                                     <strong>Fecha:</strong> 21/12/2020
+                                  </div>
+                                  <div>
+                                     <strong>Hora: </strong> 09:00 hrs.
+                                  </div>
+
+                          </div>
+                      </Popover>
                       <Popover
                             interactionKind={PopoverInteractionKind.CLICK}
                             popoverClassName="bp3-popover-content-sizing"
@@ -741,7 +1269,7 @@ class CalendarioVisualizarComp extends Component {
           </div>
           </div>
           <Link to="/VisualizarReservas">
-              <button type="button" class="bp3-button bp3-icon-add bp3-intent-danger BotonVolverCalendario" >Volver</button>
+              <button type="button" class="bp3-button bp3-icon-undo bp3-intent-danger BotonVolverCalendario" >Volver</button>
           </Link>
         </div>
     )}

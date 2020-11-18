@@ -28,61 +28,51 @@ class Usuario extends Component {
         <div className='UsuarioBox2'>
             <Link to='/Perfil'>
               <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
-                <div className="imagedispositivo">
-                  <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-                </div>
                 <div className="infodisp">
                   <div className="Nombredisp" >
                     Daniela Ramirez
                   </div>
+                  <div><p>Encargada de laboratorio</p></div>
                 </div>
               </div>
           </Link>
           <Link to='/Perfil'>
             <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
-              <div className="imagedispositivo">
-                <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-              </div>
               <div className="infodisp">
                 <div className="Nombredisp" >
                   Daniela Ramirez
                 </div>
+                <div><p>Encargada de laboratorio</p></div>
               </div>
             </div>
         </Link>
         <Link to='/Perfil'>
           <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
-            <div className="imagedispositivo">
-              <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-            </div>
             <div className="infodisp">
               <div className="Nombredisp" >
                 Daniela Ramirez
               </div>
+              <div><p>Encargada de laboratorio</p></div>
             </div>
           </div>
       </Link>
       <Link to='/Perfil'>
         <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
-          <div className="imagedispositivo">
-            <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-          </div>
           <div className="infodisp">
             <div className="Nombredisp" >
               Daniela Ramirez
             </div>
+            <div><p>Encargada de laboratorio</p></div>
           </div>
         </div>
     </Link>
     <Link to='/Perfil'>
       <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
-        <div className="imagedispositivo">
-          <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-        </div>
         <div className="infodisp">
           <div className="Nombredisp" >
             Daniela Ramirez
           </div>
+          <div><p>Encargada de laboratorio</p></div>
         </div>
       </div>
   </Link>

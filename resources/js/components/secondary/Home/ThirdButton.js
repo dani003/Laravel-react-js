@@ -25,7 +25,7 @@ import {
 class ThirdButton extends Component {
   render() {
       return (
-        <div className='grid-container'>
+        <div className='grid-container container2'>
 
         <div className="CuadroThirdButton bp3-card bp3-interactive bp3-elevation-3 ">
           <div className="infodisp">

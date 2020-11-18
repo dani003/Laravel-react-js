@@ -29,10 +29,10 @@ class CrearUsuario extends Component {
       </div>
       <div class='botonesAdminUsuario'>
           <Link to="/CrearNuevoUsuario">
-              <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonGestionUsuario">Crear Usuario</button>
+              <button type="button" class="bp3-button bp3-icon-new-object  bp3-intent-success botonGestionUsuario">Crear Usuario</button>
           </Link>
           <Link to="/EliminarUsuario">
-              <button type="button" class="bp3-button bp3-icon-add bp3-intent-success botonGestionUsuario">Eliminar Usuario</button>
+              <button type="button" class="bp3-button bp3-icon-remove bp3-intent-success botonGestionUsuario">Eliminar Usuario</button>
           </Link>
 
 

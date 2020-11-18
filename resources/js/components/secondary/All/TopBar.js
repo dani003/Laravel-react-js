@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
+import logo from './../../../../css/Imagenes/LogoPIDI.jpg'
 
 class TopBar extends Component {
   render() {
@@ -11,7 +12,7 @@ class TopBar extends Component {
           </div>
         </div>
         <div className="left">
-          <img className="imgUsuario" src="https://static.vecteezy.com/system/resources/thumbnails/000/550/980/small/user_icon_001.jpg"></img>
+          <img className="logoPIDI" src={logo} />
         </div>
     </div>
     );

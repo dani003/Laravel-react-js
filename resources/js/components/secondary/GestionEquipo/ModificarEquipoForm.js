@@ -44,8 +44,8 @@ class ModificarEquipoForm extends Component {
     return (
         <div>
         {(edit) ? (
-            <div className="CrearNuevoUsuarioBox">
-                <div class="bp3-navbar BarraTituloCrear">
+            <div className="CrearNuevoUsuarioBox2">
+                <div class="bp3-navbar BarraTituloCrear2">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Modificar equipo </h2></div>
                   </div>
@@ -54,25 +54,26 @@ class ModificarEquipoForm extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm">
+                <div class="CrearNuevoEquipoForm">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Equipo ha sido modificado con exito !!"
                           labelFor="text-input">
                         </FormGroup>
                         <div>
-                            <Link to="/ListaUsuarios">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Volver</button>
+                            <Link to="/GestionEquipo">
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
                         </div>
                     </div>
-                    <div>
+                    <div className="imgCrearNuevoEquipo">
+                      <img className="imgCrearNuevoEquipo" src="https://freepngimg.com/thumb/science/31187-8-science-hd.png"></img>
                     </div>
                 </div>
             </div>
         ) : (
             <div className="CrearNuevoLaboratorioBox">
-                <div class="bp3-navbar BarraTituloCrear">
+                <div class="bp3-navbar BarraTituloCrear2">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Modificar equipo </h2></div>
                   </div>
@@ -115,9 +116,9 @@ class ModificarEquipoForm extends Component {
                         </FormGroup>
                         <div>
                             <Link to="/GestionEquipo">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Cancelar</button>
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Modificar</button>
+                                <button type="button" class="bp3-button bp3-icon-edit  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Modificar</button>
                         </div>
                     </div>
                     <div>

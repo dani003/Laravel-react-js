@@ -41,10 +41,10 @@ class FormRealizarReserva extends Component {
                   </div>
                 </label>
                 <Link to="/CalendarioVisualizar">
-                <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-success">Ir al calendario</button>
+                <button type="button" class="bp3-button bp3-icon-manually-entered-data BotonReserva bp3-intent-success">Ir al calendario</button>
               </Link>
                 <Link to="/">
-                <button type="button" class="bp3-button bp3-icon-add BotonReserva bp3-intent-danger">Volver</button>
+                <button type="button" class="bp3-button bp3-icon-undo BotonReserva bp3-intent-danger">Volver</button>
               </Link>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 import { Button, Card, Elevation, Checkbox,Icon, TextArea } from "@blueprintjs/core";
 import { Alignment, ButtonGroup, IconName, Switch, AnchorButton } from "@blueprintjs/core";
@@ -36,7 +37,6 @@ class GestionPerfil extends Component {
       IsLoaded:true,
       logged:true,
     };
-
     this.editItem= this.editItem.bind(this);
     this.handleChange = this.handleChange.bind(this);
 }
@@ -62,6 +62,7 @@ componentDidMount(){
     console.log(this.state.User.user)
   });
 }
+
 GetUser(){
   this.setState({
     firstname: this.state.User.user.firstname,
@@ -105,7 +106,7 @@ editItem(edit){
         {(edit) ? (
           <div>
           <div className="cardProfile1">
-              <div class="bp3-navbar BarraTituloCrearLab">
+              <div class="bp3-navbar BarraTituloCrearLab3">
                 <div class="bp3-navbar-group bp3-align-left ">
                   <div><h2>Perfil de usuario </h2></div>
                 </div>
@@ -117,13 +118,13 @@ editItem(edit){
             <ButtonGroup minimal={true} >
            </ButtonGroup>
           </div>
-            <Card interactive={true} elevation={Elevation.TWO} className="cardProfile">
-              <div className="imgProfileBox">
+            <Card  elevation={Elevation.TWO} className="cardProfile">
+            {/*  <div className="imgProfileBox">
                 <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
                 <div className='ChangeImgProfile'>
                 <button type="button" class="bp3-button bp3-icon-add" >Cambiar Imagen de Perfil</button>
                 </div>
-            </div>z
+            </div> */}
               <div className="infoProfile ProfileTittles">
                 <FormGroup
                   label="Nombres"
@@ -164,7 +165,6 @@ editItem(edit){
             </Card>
         </div>):
       (<div className="content">
-      <div className="cardProfile">
           <div class="bp3-navbar BarraTituloCrearLab">
             <div class="bp3-navbar-group bp3-align-left ">
               <div><h2>Perfil de usuario </h2></div>
@@ -174,25 +174,33 @@ editItem(edit){
               <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
             </div>
           </div>
-        <ButtonGroup minimal={true} >
-            <Button class="bp3-button bp3-icon-add " type="button"  icon="edit" onClick={this.editItem.bind(this)}>Editar</Button>
-            {/* <Button class="bp3-button bp3-icon-add " type="button" intent="danger" icon="trash">Delete</Button>*/}
-          {/*  <AnchorButton rightIcon="caret-down">Options</AnchorButton>*/}
-        </ButtonGroup>
-      </div>
-        <Card interactive={true} elevation={Elevation.TWO} className="cardProfile">
-          <div className="imgProfileBox">
+        <Card elevation={Elevation.TWO} className="cardProfile">
+         {/* <div className="imgProfileBox">
             <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+          </div>*/}
+          <div className="infoProfile profiledata">
+              <div><p className='ProfileTittles' >Nombre:  </p></div>
+              <p className="colorWhite">Daniela</p>
+              <div><p className='ProfileTittles'>Apellidos: </p></div>
+              <p className="colorWhite">Ramirez Aravena</p>
+              <div><p className='ProfileTittles'>Cargo: </p></div>
+              <p className="colorWhite">Encargado de laboratorio</p>
+              <div><p className='ProfileTittles'>Email: </p></div>
+              <p className="colorWhite">Daniela.ramirez003@gmail.com</p>
+              <div><p className='ProfileTittles'>Descripcion: </p></div>
+              <p className="colorWhite">Encargado del laboratorio de bbiotecnologia </p>
+              <button type="button" class="bp3-intent-success bp3-button bp3-icon-edit" intent="success" onClick={this.editItem.bind(this)} >Editar</button>
           </div>
-          <div className="infoProfile ProfileTittles profiledata">
-              <div><p className='ProfileInfo' >Nombre: Daniela </p></div>
-              <div><p className='ProfileInfo'>Apellidos: Ramirez</p></div>
-              <div><p className='ProfileInfo'>Cargo: Ramirez</p></div>
-              <div><p className='ProfileInfo'>Email: Daniela.ramirez003@gmail.com</p></div>
-              <div><p className='ProfileInfo'>Descripcion: Ramirez</p></div>
+          <div className="opcionesPerfil">
+              <div className="RectanguloCard bp3-card bp3-interactive">
+                  <h6>Reservas Activas</h6>
+              </div>
+              <Link to="/PerfilHistorial">
+                  <div className="RectanguloCard bp3-card bp3-interactive">
+                      <h6>Historial de reservas</h6>
+                  </div>
+              </Link>
           </div>
-        <div>
-        </div>
         </Card>
     </div>)}
   </div>

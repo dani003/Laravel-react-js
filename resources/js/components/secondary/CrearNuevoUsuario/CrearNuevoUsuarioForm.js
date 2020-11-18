@@ -44,7 +44,7 @@ class CrearNuevoUsuarioForm extends Component {
     return (
         <div>
         {(edit) ? (
-            <div className="CrearNuevoUsuarioBox">
+            <div className="CrearNuevoUsuarioBox2">
                 <div class="bp3-navbar BarraTituloUsuarios">
                   <div class="bp3-navbar-group bp3-align-left ">
                     <div><h2>Crear Usuario </h2></div>
@@ -54,7 +54,7 @@ class CrearNuevoUsuarioForm extends Component {
                     <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
                   </div>
                 </div>
-                <div class="CrearNuevoUsuarioForm2">
+                <div class="CrearNuevoUsuarioForm4">
                       <div className="infoProfile ProfileTittles">
                         <FormGroup
                           label="El Usuario ha sido creado con exito !!"
@@ -62,7 +62,7 @@ class CrearNuevoUsuarioForm extends Component {
                         </FormGroup>
                         <div>
                             <Link to="/ListaUsuarios">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Volver</button>
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ class CrearNuevoUsuarioForm extends Component {
                         </FormGroup>
                         <FormGroup
                           labelFor="text-input">
-                          <Button type="button" class="bp3-button bp3-icon-add " intent="success" >Generar Contraseña</Button>
+                          <Button type="button" class="bp3-button bp3-icon-new-object " intent="success" >Generar Contraseña</Button>
                       <InputGroup className="ProfileInput" name='contraseña' id="text-input"  placeholder="******************" disabled />
                         </FormGroup>
                         <FormGroup
@@ -125,9 +125,9 @@ class CrearNuevoUsuarioForm extends Component {
                         </FormGroup>
                         <div>
                             <Link to="/ListaUsuarios">
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Cancelar</button>
+                                <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                             </Link>
-                                <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Crear Usuario</button>
+                                <button type="button" class="bp3-button bp3-icon-new-object  bp3-intent-success botonesCrearUsuario" onClick={this.editItem.bind(this)}>Crear Usuario</button>
                         </div>
                     </div>
                     <div>

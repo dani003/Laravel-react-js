@@ -7,6 +7,7 @@ import MenuBar from './../secondary/All/MenuBar.js';
 import FirstButton from './../secondary/Home/FirstButton.js';
 import SecondButton from './../secondary/Home/SecondButton.js';
 import ThirdButton from './../secondary/Home/ThirdButton.js';
+import Dashboard from './../secondary/Home/Dashboard.js';
 
 
 
@@ -16,13 +17,16 @@ class Home extends Component {
       <div className="App">
           <TopBar></TopBar>
           <MenuBar></MenuBar>
-          <div className='BotonesHorario'>
-            <Link to="/VisualizarReservas">
-                <FirstButton></FirstButton>
-            </Link>
-            <Link to="/CancelarReservas">
-              <ThirdButton></ThirdButton>
-            </Link>
+          <div className="containHome">
+              <Dashboard></Dashboard>
+              <div className='BotonesHorario'>
+                <Link to="/VisualizarReservas">
+                    <FirstButton></FirstButton>
+                </Link>
+                <Link to="/CancelarReservas">
+                  <ThirdButton></ThirdButton>
+                </Link>
+              </div>
           </div>
       </div>
     );

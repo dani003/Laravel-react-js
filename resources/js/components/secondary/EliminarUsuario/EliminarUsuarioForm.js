@@ -47,7 +47,7 @@ class EliminarUsuarioForm extends Component {
       var {edit}=this.state;
     return (
         <div>
-        {(edit) ? (<div className="CrearNuevoUsuarioBox">
+        {(edit) ? (<div className="CrearNuevoUsuarioBox2">
             <div class="bp3-navbar BarraTituloUsuarios">
               <div class="bp3-navbar-group bp3-align-left ">
                 <div><h2>Eliminar Usuario </h2></div>
@@ -65,7 +65,7 @@ class EliminarUsuarioForm extends Component {
                     </FormGroup>
                     <div>
                         <Link to="/ListaUsuarios">
-                            <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Volver</button>
+                            <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                         </Link>
 
                     </div>
@@ -73,7 +73,7 @@ class EliminarUsuarioForm extends Component {
                 <div>
                 </div>
             </div>
-        </div>) : (<div className="CrearNuevoUsuarioBox">
+        </div>) : (<div className="CrearNuevoUsuarioBox2">
         <div class="bp3-navbar BarraTituloUsuarios">
           <div class="bp3-navbar-group bp3-align-left ">
             <div><h2>Eliminar Usuario </h2></div>
@@ -92,9 +92,9 @@ class EliminarUsuarioForm extends Component {
                     </FormGroup>
                     <div>
                         <Link to="/ListaUsuarios">
-                            <button type="button" class="bp3-button bp3-icon-add  bp3-intent-danger botonesCrearUsuario">Cancelar</button>
+                            <button type="button" class="bp3-button bp3-icon-undo  bp3-intent-danger botonesCrearUsuario">Volver</button>
                         </Link>
-                            <button type="button" class="bp3-button bp3-icon-add  bp3-intent-success botonesCrearUsuario " onClick={this.editItem.bind(this)}>Eliminar Usuario</button>
+                            <button type="button" class="bp3-button bp3-icon-remove  bp3-intent-success botonesCrearUsuario " onClick={this.editItem.bind(this)}>Eliminar Usuario</button>
                     </div>
                 </div>
                 <div>
