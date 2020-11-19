@@ -1,27 +1,47 @@
 import React, { Component } from 'react';
 import { Link} from "react-router-dom";
 import {Form, Button} from 'react-bootstrap';
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
 
 class LoginForm extends Component {
+
+constructor(props) {
+super(props);
+this.state = {
+    correo: '',
+};
+
+this.handleChange = this.handleChange.bind(this);
+
+}
+
+    handleChange(event) {
+        const { correo } = this.state;
+        this.setState({correo: event.target.value});
+        localStorage.setItem('correo', event.target.value);
+        cookies.set('email', event.target.value);
+    }
+
   render() {
+
     return (
         <div className='homeP'>
             <div>
                 <img className="imgLogoUtemLogin" src="http://sitios.vtte.utem.cl/principal/wp-content/uploads/sites/2/2017/03/marca-utem-horizontal.jpg"></img>
             </div>
-                <Form class='InputLogin'>
-                  <Form.Group
-                      >
-                    <Form.Label class='PlaceHolderLoginForm'>Ingrersar Correo</Form.Label>
-                <Form.Control class="InputLogin" type="email" placeholder="correo" />
-                  </Form.Group>
-
+                <Form className='InputLogin'>
                   <Form.Group>
-                    <Form.Label class='PlaceHolderLoginForm'>Ingresar Contraseña</Form.Label>
-                <Form.Control class="InputLogin" type="password" placeholder="contraseña" />
+                    <Form.Label className='PlaceHolderLoginForm'>Ingrersar Correo</Form.Label>
+                <Form.Control className="InputLogin" type="email" placeholder="correo" name="correo" value={this.state.correo} onChange={this.handleChange}/>
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label className='PlaceHolderLoginForm'>Ingresar Contraseña</Form.Label>
+                <Form.Control className="InputLogin" type="password" placeholder="contraseña" />
                   </Form.Group>
                   <Link to="/">
-                      <Button variant='BotonIngreso' type="submit">
+                      <Button className='BotonIngreso ' type="submit">
                         Entrar
                       </Button>
                   </Link>

@@ -8,10 +8,21 @@ import FirstButton from './../secondary/Home/FirstButton.js';
 import SecondButton from './../secondary/Home/SecondButton.js';
 import ThirdButton from './../secondary/Home/ThirdButton.js';
 import Dashboard from './../secondary/Home/Dashboard.js';
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
 
 
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+          email: cookies.get('email')
+        };
+      }
+
   render() {
     return(
       <div className="App">
@@ -26,6 +37,7 @@ class Home extends Component {
                 <Link to="/CancelarReservas">
                   <ThirdButton></ThirdButton>
                 </Link>
+
               </div>
           </div>
       </div>
