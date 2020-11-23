@@ -2,8 +2,21 @@ import React, { Component } from 'react';
 import SearchBar from 'react-js-search';
 import { Link } from "react-router-dom";
 import Usuario from './Usuario.js';
+import AdminUsuario from './AdminUsuario.js';
+import Cookies from 'universal-cookie';
+
+const cookies = new Cookies();
 
 class CrearUsuario extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {
+          email: cookies.get('email')
+        };
+      }
+
   render() {
     return (
       <div className='CrearUsuarioBox'>
@@ -27,19 +40,10 @@ class CrearUsuario extends Component {
             <button class="bp3-button bp3-minimal bp3-intent-primary bp3-icon-arrow-right"></button>
           </div>
       </div>
-      <div class='botonesAdminUsuario'>
-          <Link to="/CrearNuevoUsuario">
-              <button type="button" class="bp3-button bp3-icon-new-object  bp3-intent-success botonGestionUsuario">Crear Usuario</button>
-          </Link>
-          <Link to="/EliminarUsuario">
-              <button type="button" class="bp3-button bp3-icon-remove bp3-intent-success botonGestionUsuario">Eliminar Usuario</button>
-          </Link>
-
-
-      </div>
+          <AdminUsuario></AdminUsuario>
       </div>
       <Usuario></Usuario>
-      </div>
+    </div>
     );
   }
 }

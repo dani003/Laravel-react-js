@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { Button, Intent, Popover, PopoverInteractionKind, Position } from "@blueprintjs/core";
 import { Alignment, Checkbox, H5, Label, Switch } from "@blueprintjs/core";
 import { Classes, Code, H3, Overlay} from "@blueprintjs/core";
-
+import BotonCrearEquipo from './BotonCrearEquipo.js';
+import TablaTesista from './TablaTesista.js';
 
 class TablaEquipos extends Component {
 
@@ -32,26 +33,8 @@ class TablaEquipos extends Component {
   render() {
     return (
         <div class="container">
-            <div class="bp3-navbar BarraTituloTabla">
-              <div class="bp3-navbar-group bp3-align-left ">
-                <div><h2>Lista de equipos</h2></div>
-              </div>
-              <div class="bp3-navbar-group bp3-align-right">
-                <span class="bp3-navbar-divider"></span>
-                <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
-              </div>
-            </div>
-                <div className=" bp3-card bp3-elevation-3 GestionEquipoCard">
-                <div class='botonCrearUsuario'>
-                    <Link to="/AgregarEquipo">
-                        <button type="button" class="bp3-button bp3-icon-new-object  bp3-intent-success botonGestionUsuario">Agregar Equipo</button>
-                    </Link>
-                </div>
-                <div class="bp3-input-group barraBuscarGestion">
-                  <span class="bp3-icon bp3-icon-search"></span>
-                  <input type="text" class="bp3-input"  placeholder="Buscar por nombre.." />
-                  <button class="bp3-button bp3-minimal bp3-intent-primary bp3-icon-arrow-right"></button>
-                </div>
+                <div>
+                    <BotonCrearEquipo></BotonCrearEquipo>
                 </div>
           <div class="tablaEquipos">
               <table class="bp3-html-table bp3-html-table-bordered bp3-html-table-striped">

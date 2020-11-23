@@ -61,8 +61,6 @@ class CalendarioVisualizarComp extends Component {
             </div>
           </div>):(
         <div className='FormCancelarReservaBox'>
-
-
         <div class="bp3-navbar BarraTituloCalendario">
           <div class="bp3-navbar-group bp3-align-left ">
             <div><h2>Equipo: Microscopio - Laboratorio: Biotecnologia </h2></div>
@@ -72,7 +70,6 @@ class CalendarioVisualizarComp extends Component {
             <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
           </div>
         </div>
-
         <div className="content">
           <div className=" bp3-card bp3-elevation-3 CalendarCard">
           <table>
