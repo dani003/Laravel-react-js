@@ -37,7 +37,6 @@ class Home extends Component {
                 <Link to="/CancelarReservas">
                   <ThirdButton></ThirdButton>
                 </Link>
-
               </div>
           </div>
       </div>
