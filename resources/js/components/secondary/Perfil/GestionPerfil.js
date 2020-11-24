@@ -110,10 +110,6 @@ editItem(edit){
                 <div class="bp3-navbar-group bp3-align-left ">
                   <div><h2>Perfil de usuario </h2></div>
                 </div>
-                <div class="bp3-navbar-group bp3-align-right">
-                  <span class="bp3-navbar-divider"></span>
-                  <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
-                </div>
               </div>
             <ButtonGroup minimal={true} >
            </ButtonGroup>
@@ -168,10 +164,6 @@ editItem(edit){
           <div class="bp3-navbar BarraTituloCrearLab">
             <div class="bp3-navbar-group bp3-align-left ">
               <div><h2>Perfil de usuario </h2></div>
-            </div>
-            <div class="bp3-navbar-group bp3-align-right">
-              <span class="bp3-navbar-divider"></span>
-              <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
             </div>
           </div>
         <Card elevation={Elevation.TWO} className="cardProfile">

@@ -11,10 +11,6 @@ class FormRealizarReserva extends Component {
               <div class="bp3-navbar-group bp3-align-left ">
                 <div><h2>Visualizar y realizar reservas </h2></div>
               </div>
-              <div class="bp3-navbar-group bp3-align-right">
-                <span class="bp3-navbar-divider"></span>
-                <button class="bp3-button bp3-minimal bp3-icon-info-sign"></button>
-              </div>
             </div>
           <div className=" bp3-card bp3-interactive bp3-elevation-3 FormCancelarReservaBoxCard">
             <div>

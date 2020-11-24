@@ -8,6 +8,7 @@ import RealizarReservas from './principal/RealizarReservas.js';
 import CancelarReservas from './principal/CancelarReservas.js';
 import ListaUsuarios from './principal/ListaUsuarios.js';
 import Perfil from './principal/Perfil.js';
+import Perfil2 from './principal/Perfil2.js';
 import CalendarioVisualizar from './principal/CalendarioVisualizar.js';
 import CrearNuevoUsuario from './principal/CrearNuevoUsuario.js';
 import EliminarUsuario from './principal/EliminarUsuario.js';
@@ -32,6 +33,7 @@ function App() {
             <Route exact path="/CancelarReservas" component={CancelarReservas}/>
             <Route exact path="/ListaUsuarios" component={ListaUsuarios}/>
             <Route exact path="/Perfil" component={Perfil}/>
+            <Route exact path="/Perfil2" component={Perfil2}/>
             <Route exact path="/CalendarioVisualizar" component={CalendarioVisualizar}/>
             <Route exact path="/CrearNuevoUsuario" component={CrearNuevoUsuario}/>
             <Route exact path="/EliminarUsuario" component={EliminarUsuario}/>

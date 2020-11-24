@@ -26,7 +26,7 @@ class Usuario extends Component {
       return (
         <div>
         <div className='UsuarioBox2'>
-            <Link to='/Perfil'>
+            <Link to='/Perfil2'>
               <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
                 <div className="infodisp">
                   <div className="Nombredisp" >
@@ -36,7 +36,7 @@ class Usuario extends Component {
                 </div>
               </div>
           </Link>
-          <Link to='/Perfil'>
+          <Link to='/Perfil2'>
             <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
               <div className="infodisp">
                 <div className="Nombredisp" >
@@ -46,7 +46,7 @@ class Usuario extends Component {
               </div>
             </div>
         </Link>
-        <Link to='/Perfil'>
+        <Link to='/Perfil2'>
           <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
             <div className="infodisp">
               <div className="Nombredisp" >
@@ -56,7 +56,7 @@ class Usuario extends Component {
             </div>
           </div>
       </Link>
-      <Link to='/Perfil'>
+      <Link to='/Perfil2'>
         <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
           <div className="infodisp">
             <div className="Nombredisp" >
