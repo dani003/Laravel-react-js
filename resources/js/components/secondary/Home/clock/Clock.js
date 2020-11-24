@@ -48,7 +48,7 @@ class Clock extends Component {
   render() {
     return(
     <div className="clock">
-        <h2 id="digital">{this.state.date.toLocaleTimeString()}</h2>
+        <h4 id="digital">{this.state.date.toLocaleTimeString()}</h4>
         <Hours />
         <Minutes />
         <Seconds />

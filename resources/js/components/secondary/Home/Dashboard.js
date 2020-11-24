@@ -4,6 +4,8 @@ import { render } from 'react-dom';
 import { Button, Card, Elevation, Checkbox,Icon } from "@blueprintjs/core";
 import { Alignment, ButtonGroup, IconName, Switch, AnchorButton } from "@blueprintjs/core";
 import Clock from './clock/Clock.js';
+import PieChart from './graficos/PieChart.js';
+import LineChart from './graficos/LineChart.js';
 
 class Dashboard extends Component {
     constructor() {
@@ -30,13 +32,21 @@ class Dashboard extends Component {
       return (
         <div>
             <div className="Dashboard">
-                <div className="bp3-card bp3-elevation-2 cuadradoCard dateStyle">
-                    <h6 className="mesDate centerStyle">{this.state.mes}</h6>
-                    <h2 className="centerStyle diaDate">{this.state.dia}</h2>
-                    <h6 className="centerStyle">{this.state.anio}</h6>
+                <div className="cornerTimeDate">
+                    <div className="bp3-card bp3-elevation-2 cuadradoCard dateStyle">
+                        <h6 className="mesDate centerStyle">{this.state.mes}</h6>
+                        <h2 className="centerStyle diaDate">{this.state.dia}</h2>
+                        <h6 className="centerStyle anioDate">{this.state.anio}</h6>
+                    </div>
+                    <div className="clockWidth">
+                        <Clock></Clock>
+                    </div>
                 </div>
-                <div className="clockWidth">
-                    <Clock></Clock>
+                <div className="bp3-card bp3-elevation-2 cuadradoCardCharts">
+                    <LineChart></LineChart>
+                </div>
+                <div className="bp3-card bp3-elevation-2 cuadradoCardCharts">
+                    <PieChart></PieChart>
                 </div>
             </div>
       </div>
