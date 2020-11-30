@@ -2381,3 +2381,8 @@ $other-color: #cdfe05;
     margin-top: 50px;
     width: 100%;
 }
+
+.buttonEditar{
+    width: 150px;
+    margin-right: 20px;
+}

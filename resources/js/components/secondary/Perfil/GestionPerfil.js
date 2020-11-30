@@ -154,15 +154,15 @@ editItem(edit){
                 <FormGroup
                   label="Ingresar contraseña"
                   labelFor="text-input">
-                  <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Contraseña" Value={this.state.email}/>
+                  <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Contraseña"/>
                 </FormGroup>
                 <FormGroup
                   label="Ingresar contraseña nuevamente"
                   labelFor="text-input">
-                  <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Contraseña nuevamente" Value={this.state.email}/>
+                  <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Contraseña nuevamente"/>
                 </FormGroup>
-                <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Cancelar</Button>
-                <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Editar</Button>
+                <Button type="button" className="buttonEditar bp3-button bp3-icon-edit " intent="success" onClick={this.editItem.bind(this)} >Editar</Button>
+                <Button type="button" className="buttonEditar bp3-button bp3-icon-undo " intent="Danger" onClick={this.editItem.bind(this)} >Volver</Button>
             </div>
             <div>
             </div>
@@ -192,9 +192,6 @@ editItem(edit){
               <button type="button" class="bp3-intent-success bp3-button bp3-icon-edit" intent="success" onClick={this.editItem.bind(this)} >Editar</button>
           </div>
           <div className="opcionesPerfil">
-              <div className="RectanguloCard bp3-card bp3-interactive">
-                  <h6>Reservas Activas</h6>
-              </div>
               <Link to="/PerfilHistorial">
                   <div className="RectanguloCard bp3-card bp3-interactive">
                       <h6>Historial de reservas</h6>

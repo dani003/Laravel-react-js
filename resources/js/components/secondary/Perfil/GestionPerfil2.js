@@ -35,6 +35,9 @@ class GestionPerfil extends Component {
             </div>
           </div>
         <Card elevation={Elevation.TWO} className="cardProfile">
+            <div className="imgProfileBox">
+              <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+            </div>
           <div className="infoProfile profiledata">
               <div><p className='ProfileTittles' >Nombre:  </p></div>
               <p className="colorWhite">Daniela</p>
@@ -48,10 +51,7 @@ class GestionPerfil extends Component {
               <p className="colorWhite">Encargado del laboratorio de bbiotecnologia </p>
           </div>
           <div className="opcionesPerfil">
-              <div className="RectanguloCard bp3-card bp3-interactive">
-                  <h6>Reservas Activas</h6>
-              </div>
-              <Link to="/PerfilHistorial">
+              <Link to="/PerfilHistorial2">
                   <div className="RectanguloCard bp3-card bp3-interactive">
                       <h6>Historial de reservas</h6>
                   </div>
