@@ -14,7 +14,7 @@ class PopoverInfoReserva extends Component {
       }
 
   render() {
-      if(this.state.email == 'investigador@utem.cl'){
+      if(this.state.email == 'investigador@utem.cl' || this.state.email == 'encargado@utem.cl' || this.state.email == 'admin@utem.cl' ){
           return (
             <div>
             <Popover
@@ -40,7 +40,9 @@ class PopoverInfoReserva extends Component {
                              <strong>Hora: </strong> 09:00 hrs.
                           </div>
                           <div><strong>¿ Desea cambiar su estado a procesada ?</strong></div>
-                          <button  type="button" className="bp3-button">Si</button>
+                          <Link to="/">
+                              <button  type="button" className="bp3-button">Si</button>
+                          </Link>
                           <button  type="button" className="bp3-button">no</button>
                   </div>
               </Popover>

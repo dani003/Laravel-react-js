@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { Button, Intent, Popover, PopoverInteractionKind, Position } from "@blueprintjs/core";
 import PopoverReservaTesista from './PopoverReservaTesista.js';
 import PopoverInfoReserva from './PopoverInfoReserva.js';
+import PopoverProcesado from './PopoverProcesado.js';
+import PopoverFueraPlazo from './PopoverFueraPlazo.js';
 
 class CalendarioVisualizarTesista extends Component {
 
@@ -50,21 +52,21 @@ class CalendarioVisualizarTesista extends Component {
               <td>
                   1
                 <div class="bp3-card CardReservaDia">
-                    <PopoverInfoReserva></PopoverInfoReserva>
-                      <PopoverInfoReserva></PopoverInfoReserva>
+                    <PopoverProcesado></PopoverProcesado>
+                      <PopoverProcesado></PopoverProcesado>
                 </div>
               </td>
               <td>
                   2
                 <div class="bp3-card CardReservaDia">
-                    <PopoverInfoReserva></PopoverInfoReserva>
-                      <PopoverInfoReserva></PopoverInfoReserva>
+                    <PopoverProcesado></PopoverProcesado>
+                      <PopoverFueraPlazo></PopoverFueraPlazo>
 
                 </div>
               </td>
               <td>
                   3
-                <div class="bp3-card CardReservaDia">
+                <div class="bp3-card CardReservaNow">
                     <PopoverInfoReserva></PopoverInfoReserva>
                     <PopoverReservaTesista></PopoverReservaTesista>
                 }</div>

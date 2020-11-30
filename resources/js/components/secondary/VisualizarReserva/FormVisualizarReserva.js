@@ -22,7 +22,9 @@ class FormRealizarReserva extends Component {
                     Seleccionar Equipo:
                   <div class="bp3-select SelectReservas">
                     <select >
-                      <option selected value="1">Biotecnologia</option>
+                      <option value="1" disabled> *Biotecnologia</option>
+                          <option value="1">Microscopio</option>
+                          <option value="1">Microscopio</option>
                       <option value="1" disabled> * Biologia</option>
                       <option value="1">Microscopio</option>
                       <option value="1">Microscopio</option>

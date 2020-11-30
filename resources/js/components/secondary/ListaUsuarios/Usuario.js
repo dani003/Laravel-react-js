@@ -28,6 +28,9 @@ class Usuario extends Component {
         <div className='UsuarioBox2'>
             <Link to='/Perfil2'>
               <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
+              <div className="imagedispositivo">
+                <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+              </div>
                 <div className="infodisp">
                   <div className="Nombredisp" >
                     Daniela Ramirez
@@ -38,6 +41,9 @@ class Usuario extends Component {
           </Link>
           <Link to='/Perfil2'>
             <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
+            <div className="imagedispositivo">
+              <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+            </div>
               <div className="infodisp">
                 <div className="Nombredisp" >
                   Daniela Ramirez
@@ -48,6 +54,9 @@ class Usuario extends Component {
         </Link>
         <Link to='/Perfil2'>
           <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
+          <div className="imagedispositivo">
+            <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+          </div>
             <div className="infodisp">
               <div className="Nombredisp" >
                 Daniela Ramirez
@@ -58,6 +67,9 @@ class Usuario extends Component {
       </Link>
       <Link to='/Perfil2'>
         <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
+        <div className="imagedispositivo">
+          <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+        </div>
           <div className="infodisp">
             <div className="Nombredisp" >
               Daniela Ramirez
@@ -68,6 +80,9 @@ class Usuario extends Component {
     </Link>
     <Link to='/Perfil'>
       <div className=" bp3-card bp3-interactive bp3-elevation-3 UsuarioLista">
+      <div className="imagedispositivo">
+        <img className="imgProfileUsuario" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
+      </div>
         <div className="infodisp">
           <div className="Nombredisp" >
             Daniela Ramirez

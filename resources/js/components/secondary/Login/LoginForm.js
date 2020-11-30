@@ -33,12 +33,10 @@ this.handleChange = this.handleChange.bind(this);
             </div>
                 <Form className='InputLogin'>
                   <Form.Group>
-                    <Form.Label className='PlaceHolderLoginForm'>Ingrersar Correo</Form.Label>
-                <Form.Control className="InputLogin" type="email" placeholder="correo" name="correo" value={this.state.correo} onChange={this.handleChange}/>
+                <Form.Control className="PlaceHolderLoginForm" type="email" placeholder="Ingresar correo" name="correo" required value={this.state.correo} onChange={this.handleChange}/>
                   </Form.Group>
                   <Form.Group>
-                    <Form.Label className='PlaceHolderLoginForm'>Ingresar Contraseña</Form.Label>
-                <Form.Control className="InputLogin" type="password" placeholder="contraseña" />
+                <Form.Control className="PlaceHolderLoginForm" type="password" placeholder="Ingresar contraseña" required />
                   </Form.Group>
                   <Link to="/">
                       <Button className='BotonIngreso ' type="submit">

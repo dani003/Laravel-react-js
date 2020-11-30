@@ -106,7 +106,7 @@ editItem(edit){
         {(edit) ? (
           <div>
           <div className="cardProfile1">
-              <div class="bp3-navbar BarraTituloCrearLab3">
+              <div class="bp3-navbar BarraTituloPerfil">
                 <div class="bp3-navbar-group bp3-align-left ">
                   <div><h2>Perfil de usuario </h2></div>
                 </div>
@@ -115,12 +115,10 @@ editItem(edit){
            </ButtonGroup>
           </div>
             <Card  elevation={Elevation.TWO} className="cardProfile">
-            {/*  <div className="imgProfileBox">
+            <div className="imgProfileBox">
                 <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-                <div className='ChangeImgProfile'>
-                <button type="button" class="bp3-button bp3-icon-add" >Cambiar Imagen de Perfil</button>
-                </div>
-            </div> */}
+                <FileInput text='Ingresar imagen...' buttonText="Buscar" />
+            </div>
               <div className="infoProfile ProfileTittles">
                 <FormGroup
                   label="Nombres"
@@ -153,6 +151,16 @@ editItem(edit){
                   <InputGroup className="ProfileInput" name='lastname' id="text-input" onChange={ this.handleChange }
                   placeholder="Ingresar descripcion" Value={this.state.descripcion}/>
                 </FormGroup>
+                <FormGroup
+                  label="Ingresar contraseña"
+                  labelFor="text-input">
+                  <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Contraseña" Value={this.state.email}/>
+                </FormGroup>
+                <FormGroup
+                  label="Ingresar contraseña nuevamente"
+                  labelFor="text-input">
+                  <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Contraseña nuevamente" Value={this.state.email}/>
+                </FormGroup>
                 <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Cancelar</Button>
                 <Button type="button" class="bp3-button bp3-icon-add " intent="success" onClick={this.editItem.bind(this)} >Editar</Button>
             </div>
@@ -167,9 +175,9 @@ editItem(edit){
             </div>
           </div>
         <Card elevation={Elevation.TWO} className="cardProfile">
-         {/* <div className="imgProfileBox">
+          <div className="imgProfileBox">
             <img className="imgProfile" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg"></img>
-          </div>*/}
+          </div>
           <div className="infoProfile profiledata">
               <div><p className='ProfileTittles' >Nombre:  </p></div>
               <p className="colorWhite">Daniela</p>

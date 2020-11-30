@@ -63,6 +63,7 @@ class TablaLaboratorios extends Component {
                                 <div>
                                     <h5>¿ Esta seguro de querer eliminar este laboratorio ?</h5>
                                     <Button className="bp3-popover-dismiss" onClick={this.handleOpen}>Si</Button>
+                                    <Button className="bp3-popover-dismiss" onClick={this.handleClose}>No</Button>
                                 </div>
                             </Popover>
                             <Overlay onClose={this.handleOpen} className={Classes.OVERLAY_SCROLL_CONTAINER} {...this.state}>
@@ -103,6 +104,7 @@ class TablaLaboratorios extends Component {
                                 <div>
                                     <h5>¿ Esta seguro de querer eliminar este laboratorio ?</h5>
                                     <Button className="bp3-popover-dismiss" onClick={this.handleOpen}>Si</Button>
+                                    <Button className="bp3-popover-dismiss" onClick={this.handleClose}>No</Button>
                                 </div>
                             </Popover>
                             <Overlay onClose={this.handleOpen} className={Classes.OVERLAY_SCROLL_CONTAINER} {...this.state}>
@@ -143,6 +145,7 @@ class TablaLaboratorios extends Component {
                                 <div>
                                     <h5>¿ Esta seguro de querer eliminar este laboratorio ?</h5>
                                     <Button className="bp3-popover-dismiss" onClick={this.handleOpen}>Si</Button>
+                                    <Button className="bp3-popover-dismiss" onClick={this.handleClose}>No</Button>
                                 </div>
                             </Popover>
                             <Overlay onClose={this.handleOpen} className={Classes.OVERLAY_SCROLL_CONTAINER} {...this.state}>

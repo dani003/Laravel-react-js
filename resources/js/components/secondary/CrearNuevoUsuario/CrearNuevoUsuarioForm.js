@@ -113,11 +113,6 @@ class CrearNuevoUsuarioForm extends Component {
                           <InputGroup className="ProfileInput" name='email' id="text-input"  placeholder="Ingresar Email" />
                         </FormGroup>
                         <FormGroup
-                          labelFor="text-input">
-                          <Button type="button" class="bp3-button bp3-icon-new-object " intent="success" >Generar Contraseña</Button>
-                      <InputGroup className="ProfileInput" name='contraseña' id="text-input"  placeholder="******************" disabled />
-                        </FormGroup>
-                        <FormGroup
                           label="Telefono"
                           labelFor="text-input">
                           <InputGroup className="ProfileInput" name='telefono' id="text-input"

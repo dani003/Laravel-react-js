@@ -1010,8 +1010,8 @@ nav ul,nav li {
   margin: 20px;
 }
 .imgProfileBox{
-  width: 30%;
-  height: 30%;
+  width: 10%;
+  height: 10%;
 }
 .imgProfile{
   width: 200px;
@@ -1392,6 +1392,7 @@ td{
 .imgProfileBox{
   width: 30%;
   height: 30%;
+  margin-right:60px;
 }
 .imgProfile{
   width: 300px;
@@ -1692,6 +1693,7 @@ td{
   color: black;
    width: 100%;
    border-radius: 10px;
+   margin-top: 30px;
 }
 .BotonIngreso{
   font-size: 20px;
@@ -1771,6 +1773,14 @@ td{
   height: 110%;
   display:  flex;
 }
+
+.CardReservaNow{
+  width: 110%;
+  height: 110%;
+  display:  flex;
+  border-style: solid;
+  border-color: green;
+}
 .botonL{
     text-decoration: none;
     outline:none;
@@ -1801,10 +1811,26 @@ td{
   color: grey;
   border-color: #00acac;
 }
+
+.ReservaInfoBotonP{
+  width: 30px;
+  height: 30px;
+  background: rgba(90, 211, 94, 0.9);
+  color: grey;
+  border-color: #00acac;
+}
 .ReservaInfoBotonL{
   width: 30px;
   height: 30px;
   background: white;
+  color: grey;
+  border-color: #00acac;
+  text-decoration: none;
+}
+.ReservaInfoBotonF{
+  width: 30px;
+  height: 30px;
+  background: rgba(240, 189, 142, 0.57);
   color: grey;
   border-color: #00acac;
   text-decoration: none;
@@ -2025,6 +2051,14 @@ td{
     width: 100%;
     margin-left: 10px;
 }
+
+.BarraTituloPerfil{
+    margin-top: 180px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-left: 10px;
+}
+
 .BarraTituloCrearLab2{
     margin-top: 50px;
     margin-bottom: 20px;
@@ -2340,4 +2374,10 @@ $other-color: #cdfe05;
      margin-right: 20px;
      display: flex;
      justify-content: center;
+}
+
+.imgLogin{
+    opacity: .8;
+    margin-top: 50px;
+    width: 100%;
 }
